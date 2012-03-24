@@ -1,0 +1,15 @@
+// Grid System Mixins
+//
+// Le grid system
+// -------------------------
+=gridSystem-columns($gridGutterWidth, $gridColumnWidth, $gridRowWidth, $columns)
+  width: $gridColumnWidth * $columns + $gridGutterWidth * ($columns - 1)
+
+=gridSystem-offset($gridColumnWidth, $gridGutterWidth, $columns)
+  margin-left: $gridColumnWidth * $columns + $gridGutterWidth * ($columns - 1) + $gridGutterWidth * 2
+
+=gridSystem-gridColumn($gridGutterWidth)
+  float: left
+  margin-left: $gridGutterWidth
+
+

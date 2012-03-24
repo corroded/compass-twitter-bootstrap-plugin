@@ -1,0 +1,16 @@
+@import grid_system_mixins
+
+=row
+  margin-left: $gridGutterWidth * -1
+  +clearfix
+
+=span($colSize)
+  float: left
+  margin-left: $gridGutterWidth
+  +gridSystem-columns($gridGutterWidth, $gridColumnWidth, $gridRowWidth, $colSize)
+
+=offset($colSize)
+  +gridSystem-offset($gridColumnWidth, $gridGutterWidth, $colSize)
+
+=container
+  +gridSystem-columns($gridGutterWidth, $gridColumnWidth, $gridRowWidth, 12)
