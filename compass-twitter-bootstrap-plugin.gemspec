@@ -12,7 +12,7 @@ Gem::Specification.new do |s|
   s.has_rdoc = false
   s.files = [
     "compass-twitter-bootstrap-plugin.gemspec",
-    "lib/compass-twitter-bootstrap-plugin.rb",
+    "lib/twitter-bootstrap.rb",
     "stylesheets/bootstrap.sass",
     "stylesheets/twitter/_reset.sass",
     "templates/project/manifest.rb",
