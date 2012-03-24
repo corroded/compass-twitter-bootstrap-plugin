@@ -17,11 +17,11 @@ Install
 Create a Bootstrap-based Compass Project
 ========================================
 
-    compass create -r twitter-bootstrap my_project --using compass-twitter-bootstrap-plugin
+    compass create -r twitter-bootstrap my_project --using twitter
 
 Or, If you prefer to use Sass's indentation based syntax:
 
-    compass create -r twitter-bootstrap my_project --using compass-twitter-bootstrap-plugin --syntax sass
+    compass create -r twitter-bootstrap my_project --using twitter --syntax sass
 
 USAGE
 =====
