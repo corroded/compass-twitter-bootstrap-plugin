@@ -1,0 +1,129 @@
+<!doctype html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="chrome=1">
+    <title>Compass-twitter-bootstrap-plugin by corroded</title>
+
+    <link rel="stylesheet" href="stylesheets/styles.css">
+    <link rel="stylesheet" href="stylesheets/pygment_trac.css">
+    <meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no">
+    <!--[if lt IE 9]>
+    <script src="//html5shiv.googlecode.com/svn/trunk/html5.js"></script>
+    <![endif]-->
+  </head>
+  <body>
+    <div class="wrapper">
+      <header>
+        <h1>Compass-twitter-bootstrap-plugin</h1>
+        <p>A Compass plugin of the Twitter Bootstrap v2</p>
+        <p class="view"><a href="https://github.com/corroded/compass-twitter-bootstrap-plugin">View the Project on GitHub <small>corroded/compass-twitter-bootstrap-plugin</small></a></p>
+        <ul>
+          <li><a href="https://github.com/corroded/compass-twitter-bootstrap-plugin/zipball/master">Download <strong>ZIP File</strong></a></li>
+          <li><a href="https://github.com/corroded/compass-twitter-bootstrap-plugin/tarball/master">Download <strong>TAR Ball</strong></a></li>
+          <li><a href="https://github.com/corroded/compass-twitter-bootstrap-plugin">View On <strong>GitHub</strong></a></li>
+        </ul>
+      </header>
+      <section>
+        <h1>Twitter Bootstrap V2.0 - Compass Plugin</h1>
+
+<p>Twitter Bootstrap was created by Mark Otto and Jacob Thornton. See the official site for more info: <a href="http://twitter.github.com/bootstrap/">http://twitter.github.com/bootstrap/</a></p>
+
+<ul>
+<li>This plugin is consistent with latest version of Twitter Bootstrap v2.0 as of 2/19/2012.</li>
+</ul><hr><p>This plugin adds the Twitter Bootstrap CSS framework to <a href="http://compass-style.org/">Compass</a>.</p>
+
+<h1>Install</h1>
+
+<pre><code>gem install compass-twitter-bootstrap-plugin
+</code></pre>
+
+<h1>Create a Bootstrap-based Compass Project</h1>
+
+<pre><code>compass create -r twitter-bootstrap my_project --using twitter
+</code></pre>
+
+<p>Or, If you prefer to use Sass's indentation based syntax:</p>
+
+<pre><code>compass create -r twitter-bootstrap my_project --using twitter --syntax sass
+</code></pre>
+
+<h1>USAGE</h1>
+
+<p>This gem was built for semantic grids using only CSS, which means that you don't need the any <code>span&lt;n&gt;</code> or <code>row</code> class in your markup. The grid will be generated as SASS mixins for your convenience.</p>
+
+<p>Here are the available mixins:</p>
+
+<h2>Grid</h2>
+
+<ul>
+<li>
+<code>+row</code> - make your element a grid column container using this mixin</li>
+<li>
+<code>+fluid-row</code> - make your element a fluid grid column container using this mixin</li>
+<li>
+<code>+span(n)</code> - add n grid columns to your element</li>
+<li>
+<code>+offset(n)</code> - add n empty grid columns to your grid</li>
+<li>
+<code>+container</code> - make your element to a fixed layout of 940px</li>
+<li>
+<code>+fluid-container</code> - make your element a fluid layout for your grids. This implies that you will also be using <code>+fluid-row</code> as your grid column container</li>
+</ul><h2>Typography</h2>
+
+<ul>
+<li>
+<code>+text</code> - will import all the base typography for Bootstrap</li>
+</ul><h2>Tables</h2>
+
+<ul>
+<li>
+<code>+tables</code> - will import all base table styles for Bootstrap(striped, bordered, etc.)</li>
+</ul><h2>Buttons</h2>
+
+<ul>
+<li>
+<code>+btn</code> - will add the default button style to the element</li>
+<li>
+<code>+btn-primary</code> - will add the button style based on the primary color set by the variable, <code>@primary-color</code>
+</li>
+<li>
+<code>+btn-group</code> - will make the current element a button group container</li>
+</ul><p>The following will add button styles based on the associated color set by the variable with the same name:</p>
+
+<ul>
+<li><code>+btn-info</code></li>
+<li><code>+btn-success</code></li>
+<li><code>+btn-warning</code></li>
+<li><code>+btn-danger</code></li>
+<li><code>+btn-inverse</code></li>
+</ul><h3>Button sizes</h3>
+
+<ul>
+<li><code>+btn-large</code></li>
+<li><code>+btn-small</code></li>
+<li><code>+btn-mini</code></li>
+</ul><h2>Icons</h2>
+
+<p><code>+icons</code> will import the Icon styles used by Bootstrap as documented here: <a href="http://twitter.github.com/bootstrap/base-css.html#icons">http://twitter.github.com/bootstrap/base-css.html#icons</a>. Use the styles like you would in Bootstrap with the addition of one mixin:</p>
+
+<ul>
+<li>
+<code>+icon-white</code> - will give you the inverted (white) icons instead. The mixin was added so you don't have to add an extra icon-white class to your markup.</li>
+</ul><h1>TODO</h1>
+
+<ul>
+<li>Add other Bootstrap Default styles and Mixins</li>
+<li>Finish the README</li>
+<li>Add examples to README or in a separate folder</li>
+</ul>
+      </section>
+      <footer>
+        <p>This project is maintained by <a href="https://github.com/corroded">corroded</a></p>
+        <p><small>Hosted on GitHub Pages &mdash; Theme by <a href="https://github.com/orderedlist">orderedlist</a></small></p>
+      </footer>
+    </div>
+    <script src="javascripts/scale.fix.js"></script>
+    
+  </body>
+</html>
