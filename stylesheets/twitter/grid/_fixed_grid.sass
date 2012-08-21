@@ -5,8 +5,7 @@
   +clearfix
 
 =span($colSize)
-  float: left
-  margin-left: $gridGutterWidth
+  +gridSystem-gridColumn($gridGutterWidth)
   +gridSystem-columns($gridGutterWidth, $gridColumnWidth, $gridRowWidth, $colSize)
 
 =offset($colSize)
