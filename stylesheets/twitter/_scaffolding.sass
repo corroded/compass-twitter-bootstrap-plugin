@@ -1,0 +1,44 @@
+// Scaffolding
+// Basic and global styles for generating a grid system, structural layout, and page templates
+// -------------------------------------------------------------------------------------------
+
+// Body reset
+// ----------
+
+body
+  margin: 0
+  font-family: $baseFontFamily
+  font-size: $baseFontSize
+  line-height: $baseLineHeight
+  color: $textColor
+  background-color: $bodyBackground
+
+// Links
+// -----
+
+a
+  color: $linkColor
+  text-decoration: none
+
+a:hover
+  color: $linkColorHover
+  text-decoration: underline
+
+// Images
+// -------------------------
+
+@mixin img-rounded 
+  @include border-radius(6px)
+
+@mixin img-polaroid 
+  padding: 4px
+  background-color: #fff
+  border: 1px solid #ccc
+  border: 1px solid rgba(0,0,0,.2)
+  -webkit-box-shadow: 0 1px 3px rgba(0,0,0,.1)
+  -moz-box-shadow: 0 1px 3px rgba(0,0,0,.1)
+  box-shadow: 0 1px 3px rgba(0,0,0,.1)
+
+@mixin img-circle 
+  @include border-radius(500px)
+

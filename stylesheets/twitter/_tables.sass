@@ -141,3 +141,37 @@
   .table-hover
     @include table-hover
 
+@mixin table-striped($bgColor: $tableBackgroundAccent)
+  // ZEBRA-STRIPING
+  // --------------
+
+  // Default zebra-stripe styles (alternating gray and transparent backgrounds)
+  tbody
+    tr:nth-child(odd) td,
+    tr:nth-child(odd) th
+      background-color: $bgColor
+
+@mixin table-hover($bgHover: $tableBackgroundHover)
+  // Remember to add this AFTER adding zebra stripes
+  tbody
+    tr:hover td,
+    tr:hover th
+      background-color: $bgHover
+
+@mixin table-defaults
+  table
+    @include table-base
+    @include table-normal
+
+  .table-condensed
+    @include table-condensed
+
+  .table-bordered
+    @include table-bordered
+
+  .table-striped
+    @include table-striped
+
+  .table-hover
+    @include table-hover
+

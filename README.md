@@ -30,6 +30,9 @@ This gem was built for semantic grids using only CSS, which means that you don't
 
 Here are the available mixins(only the ones with "FULLY IMPLEMENTED" are available right now):
 
+## Reset
+* `+reset` - use the Twitter Bootstrap reset
+
 ##Tables - FULLY IMPLEMENTED
 
 * `+tables` - will import all base table styles for Bootstrap(striped, bordered, etc.)
@@ -39,7 +42,7 @@ Here are the available mixins(only the ones with "FULLY IMPLEMENTED" are availab
 * `+table-striped(stripe-color)` - zebra striped tables(default: $tableBackgroundAccent) 
 * `+table-hover(stripe-color)` - zebra striped tables(default: $tableBackgroundHover)
 
-##Typography
+##Typography - FULLY IMPLEMENTED
 
 * `+text` - will import all the base typography for Bootstrap
 * `+muted` - muted color for text(default: $grayLight)
