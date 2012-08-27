@@ -1,0 +1,42 @@
+// The Grid
+@mixin row
+  margin-left: $gridGutterWidth * -1
+  @include bootstrap-clearfix
+
+@mixin span($columns)
+  float: left
+  margin-left: $gridGutterWidth
+  width: ($gridColumnWidth * $columns) + ($gridGutterWidth * ($columns - 1))
+
+@mixin offset($columns)
+  margin-left: ($gridColumnWidth * $columns) + ($gridGutterWidth * ($columns + 1))
+
+@mixin fluid-row
+  width: 100%
+  @include bootstrap-clearfix
+
+@mixin fluid-span($columns)
+  @include input-block-level
+  float: left
+  margin-left: $fluidGridGutterWidth
+  *margin-left: $fluidGridGutterWidth - (.5 / $gridRowWidth * 100 * 1%)
+
+  &:first-child
+    margin-left: 0
+
+@mixin fluid-offset($columns)
+  margin-left: ($fluidGridColumnWidth * $columns) + ($fluidGridGutterWidth * ($columns - 1)) + ($fluidGridGutterWidth*2)
+  *margin-left: ($fluidGridColumnWidth * $columns) + ($fluidGridGutterWidth * ($columns - 1)) - (.5 / $gridRowWidth * 100 * 1%) + ($fluidGridGutterWidth*2) - (.5 / $gridRowWidth * 100 * 1%)
+
+  &:first-child
+    margin-left: ($fluidGridColumnWidth * $columns) + ($fluidGridGutterWidth * ($columns - 1)) + ($fluidGridGutterWidth)
+    *margin-left: ($fluidGridColumnWidth * $columns) + ($fluidGridGutterWidth * ($columns - 1)) - (.5 / $gridRowWidth * 100 * 1%) + $fluidGridGutterWidth - (.5 / $gridRowWidth * 100 * 1%)
+
+@mixin bootstrap-container
+  @include span($gridColumns)
+
+// Only for input, textarea, and uneditable inputs
+@mixin input-span($columns)
+  margin-left: 0
+  width: (($gridColumnWidth) * $columns) + ($gridGutterWidth * ($columns - 1)) - 14
+

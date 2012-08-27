@@ -30,7 +30,7 @@ This gem was built for semantic grids using only CSS, which means that you don't
 
 Here are the available mixins(only the ones with "FULLY IMPLEMENTED" are available right now):
 
-## Reset
+## Reset - FULLY IMPLEMENTED
 * `+reset` - use the Twitter Bootstrap reset
 
 ##Tables - FULLY IMPLEMENTED
@@ -50,15 +50,19 @@ Here are the available mixins(only the ones with "FULLY IMPLEMENTED" are availab
 * `+page-header-h1` - page header style for h1 elements
 * `+dl-horizontal` - add to a definition list for horizontal layout 
 
-##Grid
+##Grid - FULLY IMPLEMENTED
+
+### Fixed-width
 
 * `+row` - make your element a grid column container using this mixin
-* `+fluid-row` - make your element a fluid grid column container using this mixin
 * `+span(n)` - add n grid columns to your element
 * `+offset(n)` - add n empty grid columns to your grid
-* `+container` - make your element to a fixed layout of 940px
-* `+fluid-container` - make your element a fluid layout for your grids. This implies that you will also be using `+fluid-row` as your grid column container
+* `+bootstrap-container` - make your element to grib-based fixed layout based on $gridColumns
 
+### Fluid
+* `+fluid-row` - make your element a fluid grid column container using this mixin
+* `+fluid-span(n)` - add n grid columns to your element
+* `+fluid-offset(n)` - add n empty grid columns to your grid
 
 ##Buttons
 
