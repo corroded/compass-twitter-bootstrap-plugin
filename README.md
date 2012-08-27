@@ -3,7 +3,7 @@ Twitter Bootstrap V2.0 - Compass Plugin
 
 Twitter Bootstrap was created by Mark Otto and Jacob Thornton. See the official site for more info: <http://twitter.github.com/bootstrap/>
 
-* This plugin is consistent with latest version of Twitter Bootstrap v2.0 as of 2/19/2012.
+* This plugin is consistent with latest version of Twitter Bootstrap v2.1 as of Aug 27, 2012.
 
 ---------
 
