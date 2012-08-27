@@ -1,6 +1,5 @@
-=text
-  // TYPOGRAPHY
-  // Headings, body text, lists, code, and more for a versatile and durable typography system
+@mixin text
+  // Typography
   // ----------------------------------------------------------------------------------------
 
   // BODY TEXT
@@ -26,8 +25,9 @@
 
   h1, h2, h3, h4, h5, h6
     margin: 0
-    font-weight: bold
-    color: $grayDark
+    font-family: $headingsFontFamily
+    font-weight: $headingsFontWeight
+    color: $headingsColor
     text-rendering: optimizelegibility
     // Fix the character spacing for headings
     small
@@ -47,8 +47,8 @@
       font-size: 18px
 
   h3
-    line-height: $baseLineHeight * 1.5
     font-size: 18px
+    line-height: $baseLineHeight * 1.5
     small
       font-size: 14px
 
@@ -100,7 +100,8 @@
   li
     line-height: $baseLineHeight
 
-  ul.unstyled
+  ul.unstyled,
+  ol.unstyled
     margin-left: 0
     list-style: none
 
@@ -114,9 +115,22 @@
 
   dt
     font-weight: bold
+    line-height: $baseLineHeight - 1
+    // fix jank Helvetica Neue font bug
 
   dd
     margin-left: $baseLineHeight / 2
+
+  // Horizontal layout (like forms)
+  .dl-horizontal
+    dt
+      float: left
+      width: 120px
+      clear: left
+      text-align: right
+      @include text-overflow
+    dd
+      margin-left: 130px
 
   // MISC
   // ----
@@ -125,7 +139,7 @@
   hr
     margin: $baseLineHeight 0
     border: 0
-    border-top: 1px solid #e5e5e5
+    border-top: 1px solid $hrBorder
     border-bottom: 1px solid $white
 
   // Emphasis
@@ -135,15 +149,14 @@
   em
     font-style: italic
 
-  .muted
-    color: $grayLight
-
   // Abbreviations and acronyms
-  abbr
+  abbr[title]
+    cursor: help
+    border-bottom: 1px dotted #ddd
+
+  abbr.initialism
     font-size: 90%
     text-transform: uppercase
-    border-bottom: 1px dotted #ddd
-    cursor: help
 
   // Blockquotes
   blockquote
@@ -152,7 +165,7 @@
     border-left: 5px solid $grayLighter
     p
       margin-bottom: 0
-      +font-shorthand(16px, 300, $baseLineHeight * 1.25)
+      @include shorthand(16px, 300, $baseLineHeight * 1.25)
     small
       display: block
       line-height: $baseLineHeight
@@ -162,10 +175,10 @@
     // Float right with text-align: right
     &.pull-right
       float: right
-      padding-left: 0
       padding-right: 15px
-      border-left: 0
+      padding-left: 0
       border-right: 5px solid $grayLighter
+      border-left: 0
       p,
       small
         text-align: right
@@ -182,8 +195,8 @@
   address
     display: block
     margin-bottom: $baseLineHeight
-    line-height: $baseLineHeight
     font-style: normal
+    line-height: $baseLineHeight
 
   // Misc
   small
@@ -191,4 +204,10 @@
 
   cite
     font-style: normal
+
+  .muted
+    @include muted
+
+@mixin muted
+  color: $grayLight
 

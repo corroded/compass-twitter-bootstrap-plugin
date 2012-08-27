@@ -28,7 +28,15 @@ USAGE
 
 This gem was built for semantic grids using only CSS, which means that you don't need the any `span<n>` or `row` class in your markup. The grid will be generated as SASS mixins for your convenience.
 
-Here are the available mixins:
+Here are the available mixins(only the ones with "FULLY IMPLEMENTED" are available right now):
+
+##Tables - FULLY IMPLEMENTED
+
+* `+tables` - will import all base table styles for Bootstrap(striped, bordered, etc.)
+* `+table-base` - adds base table styles to a table
+* `+table-condensed` - condensed table with half padding
+* `+table-bordered` - adds borders to the base styles
+* `+table-striped(stripe-color)` - zebra striped tables(default color is gray - #f9f9f9)
 
 ##Grid
 
@@ -42,10 +50,6 @@ Here are the available mixins:
 ##Typography
 
 * `+text` - will import all the base typography for Bootstrap
-
-##Tables
-
-* `+tables` - will import all base table styles for Bootstrap(striped, bordered, etc.)
 
 ##Buttons
 
