@@ -35,8 +35,17 @@ Here are the available mixins(only the ones with "FULLY IMPLEMENTED" are availab
 * `+tables` - will import all base table styles for Bootstrap(striped, bordered, etc.)
 * `+table-base` - adds base table styles to a table
 * `+table-condensed` - condensed table with half padding
-* `+table-bordered` - adds borders to the base styles
-* `+table-striped(stripe-color)` - zebra striped tables(default color is gray - #f9f9f9)
+* `+table-bordered(border-color)` - adds borders to the base styles(defaults: $tableBorder)
+* `+table-striped(stripe-color)` - zebra striped tables(default: $tableBackgroundAccent) 
+* `+table-hover(stripe-color)` - zebra striped tables(default: $tableBackgroundHover)
+
+##Typography
+
+* `+text` - will import all the base typography for Bootstrap
+* `+muted` - muted color for text(default: $grayLight)
+* `+page-header` - add the page header style to an element
+* `+page-header-h1` - page header style for h1 elements
+* `+dl-horizontal` - add to a definition list for horizontal layout 
 
 ##Grid
 
@@ -47,9 +56,6 @@ Here are the available mixins(only the ones with "FULLY IMPLEMENTED" are availab
 * `+container` - make your element to a fixed layout of 940px
 * `+fluid-container` - make your element a fluid layout for your grids. This implies that you will also be using `+fluid-row` as your grid column container
 
-##Typography
-
-* `+text` - will import all the base typography for Bootstrap
 
 ##Buttons
 

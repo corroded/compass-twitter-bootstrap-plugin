@@ -14,12 +14,6 @@
       font-size: $baseFontSize - 2
       color: $grayLight
 
-  .lead
-    margin-bottom: $baseLineHeight
-    font-size: 20px
-    font-weight: 200
-    line-height: $baseLineHeight * 1.5
-
   // HEADINGS
   // --------
 
@@ -68,14 +62,6 @@
     color: $grayLight
     text-transform: uppercase
 
-  // Page header
-  .page-header
-    padding-bottom: $baseLineHeight - 1
-    margin: $baseLineHeight 0
-    border-bottom: 1px solid $grayLighter
-
-  .page-header h1
-    line-height: 1
 
   // LISTS
   // -----
@@ -121,16 +107,6 @@
   dd
     margin-left: $baseLineHeight / 2
 
-  // Horizontal layout (like forms)
-  .dl-horizontal
-    dt
-      float: left
-      width: 120px
-      clear: left
-      text-align: right
-      @include text-overflow
-    dd
-      margin-left: 130px
 
   // MISC
   // ----
@@ -205,9 +181,32 @@
   cite
     font-style: normal
 
-  .muted
-    @include muted
-
 @mixin muted
   color: $grayLight
 
+@mixin lead
+  margin-bottom: $baseLineHeight
+  font-size: 20px
+  font-weight: 200
+  line-height: $baseLineHeight * 1.5
+
+// Page header
+@mixin page-header
+  padding-bottom: $baseLineHeight - 1
+  margin: $baseLineHeight 0
+  border-bottom: 1px solid $grayLighter
+
+@mixin page-header-h1
+  line-height: 1
+
+
+// Horizontal layout (like forms)
+@mixin dl-horizontal
+  dt
+    float: left
+    width: 120px
+    clear: left
+    text-align: right
+    @include text-overflow
+  dd
+    margin-left: 130px
