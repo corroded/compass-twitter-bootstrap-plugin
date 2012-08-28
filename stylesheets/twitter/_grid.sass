@@ -33,7 +33,7 @@
     *margin-left: ($fluidGridColumnWidth * $columns) + ($fluidGridGutterWidth * ($columns - 1)) - (.5 / $gridRowWidth * 100 * 1%) + $fluidGridGutterWidth - (.5 / $gridRowWidth * 100 * 1%)
 
 @mixin bootstrap-container
-  @include span($gridColumns)
+  width: ($gridColumnWidth * $gridColumns) + ($gridGutterWidth * ($gridColumns - 1))
 
 // Only for input, textarea, and uneditable inputs
 @mixin input-span($columns)

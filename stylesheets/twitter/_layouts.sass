@@ -1,0 +1,10 @@
+@mixin container
+  @include bootstrap-container
+  @include container-fixed
+
+
+// Fluid layouts (left aligned, with sidebar, min- & max-width content)
+@mixin container-fluid
+  padding-right: $gridGutterWidth
+  padding-left: $gridGutterWidth
+  @include bootstrap-clearfix

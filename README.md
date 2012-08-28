@@ -57,12 +57,23 @@ Here are the available mixins(only the ones with "FULLY IMPLEMENTED" are availab
 * `+row` - make your element a grid column container using this mixin
 * `+span(n)` - add n grid columns to your element
 * `+offset(n)` - add n empty grid columns to your grid
-* `+bootstrap-container` - make your element to grib-based fixed layout based on $gridColumns
+* `+container` - add to an element to turn it into a containing element for your grid(based on $gridColumns)
 
 ### Fluid
 * `+fluid-row` - make your element a fluid grid column container using this mixin
 * `+fluid-span(n)` - add n grid columns to your element
 * `+fluid-offset(n)` - add n empty grid columns to your grid
+* `+container-fluid` - add to an element to turn it into a containing element for your fluid grid(based on $gridColumns)
+
+## Code - FULLY IMPLEMENTED
+
+Basically uses the same classes and styles as Twitter Bootstrap. Code are usually inserted into `pre` and `code` tags anyway,
+so no need to turn them into a mixin. One mixin exists though:
+
+* `+pre-scrollable` - make a code/pre scrollable (for long snippets)
+
+WIP: TO BE IMPLEMENTED
+======
 
 ##Buttons
 
