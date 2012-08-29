@@ -144,7 +144,7 @@
   textarea 
     color: $textColor
     border-color: $borderColor
-    .box-shadow(inset 0 1px 1px rgba(0,0,0,.075)) // Redeclare so transitions work
+    @include box-shadow(rgba(0,0,0,.075) 0 1px 1px inset) // Redeclare so transitions work
     &:focus 
       border-color: darken($borderColor, 10%)
       // Write out in full since the lighten() function isn't easily escaped
@@ -372,7 +372,7 @@
 // Use .makeRow and .makeColumn to assign semantic layouts grid system behavior
 @mixin makeRow() 
   margin-left: $gridGutterWidth * -1
-  .clearfix()
+  @include bootstrap-clearfix()
 
 @mixin makeColumn($columns: 1, $offset: 0) 
   float: left
