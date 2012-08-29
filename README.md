@@ -31,7 +31,7 @@ This gem was built for semantic grids using only CSS, which means that you don't
 Here are the available mixins(only the ones with "FULLY IMPLEMENTED" are available right now):
 
 ## Reset - FULLY IMPLEMENTED
-* `+reset` - use the Twitter Bootstrap reset
+* `@import twitter/reset` - use the Twitter Bootstrap reset
 
 ##Tables - FULLY IMPLEMENTED
 
