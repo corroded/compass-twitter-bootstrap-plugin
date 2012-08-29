@@ -81,31 +81,31 @@
   // For first th or td in the first row in the first thead or tbody
   thead:first-child tr:first-child th:first-child,
   tbody:first-child tr:first-child td:first-child
-    @include border-radius(4px 0 0 0)
+    @include border-top-left-radius(4px)
   thead:first-child tr:first-child th:last-child,
   tbody:first-child tr:first-child td:last-child
-    @include border-radius(0 4px 0 0)
+    @include border-top-right-radius(4px)
   // For first th or td in the first row in the first thead or tbody
   thead:last-child tr:last-child th:first-child,
   tbody:last-child tr:last-child td:first-child,
   tfoot:last-child tr:last-child td:first-child
-    @include border-radius(0 0 0 4px)
+    @include border-bottom-left-radius(4px)
   thead:last-child tr:last-child th:last-child,
   tbody:last-child tr:last-child td:last-child,
   tfoot:last-child tr:last-child td:last-child
-    @include border-radius(0 0 4px 0)
+    @include border-bottom-right-radius(4px)
 
   // Special fixes to round the left border on the first td/th
   caption + thead tr:first-child th:first-child,
   caption + tbody tr:first-child td:first-child,
   colgroup + thead tr:first-child th:first-child,
   colgroup + tbody tr:first-child td:first-child
-    @include border-radius(4px 0 0 0)
+    @include border-top-left-radius(4px)
   caption + thead tr:first-child th:last-child,
   caption + tbody tr:first-child td:last-child,
   colgroup + thead tr:first-child th:last-child,
   colgroup + tbody tr:first-child td:last-child
-    @include border-radius(0 0 0 4px)
+    @include border-top-right-radius(4px)
 
 @mixin table-striped($bgColor: $tableBackgroundAccent)
   // ZEBRA-STRIPING
@@ -125,42 +125,9 @@
       background-color: $bgHover
 
 @mixin table-defaults
+  @include table-base
+
   table
-    @include table-base
-    @include table-normal
-
-  .table-condensed
-    @include table-condensed
-
-  .table-bordered
-    @include table-bordered
-
-  .table-striped
-    @include table-striped
-
-  .table-hover
-    @include table-hover
-
-@mixin table-striped($bgColor: $tableBackgroundAccent)
-  // ZEBRA-STRIPING
-  // --------------
-
-  // Default zebra-stripe styles (alternating gray and transparent backgrounds)
-  tbody
-    tr:nth-child(odd) td,
-    tr:nth-child(odd) th
-      background-color: $bgColor
-
-@mixin table-hover($bgHover: $tableBackgroundHover)
-  // Remember to add this AFTER adding zebra stripes
-  tbody
-    tr:hover td,
-    tr:hover th
-      background-color: $bgHover
-
-@mixin table-defaults
-  table
-    @include table-base
     @include table-normal
 
   .table-condensed
