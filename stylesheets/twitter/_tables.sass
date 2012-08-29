@@ -13,6 +13,8 @@
       collapse: collapse
       spacing: 0
 
+    @include table-normal
+
 @mixin table-normal
   // BASELINE STYLES
   // ---------------
@@ -126,9 +128,6 @@
 
 @mixin table-defaults
   @include table-base
-
-  table
-    @include table-normal
 
   .table-condensed
     @include table-condensed

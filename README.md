@@ -35,7 +35,9 @@ Here are the available mixins(only the ones with "FULLY IMPLEMENTED" are availab
 
 ##Tables - FULLY IMPLEMENTED
 
-* `+table-defaults` - will import all base table styles for Bootstrap(striped, bordered, etc.)
+If you plan to just use the mixins, just use table-base
+
+* `+table-defaults` - will import all base table styles for Bootstrap(striped, bordered, etc.). Use this if you think the classes are suitable for you.
 * `+table-base` - adds base table styles to a table
 * `+table-condensed` - condensed table with half padding
 * `+table-bordered(border-color)` - adds borders to the base styles(defaults: $tableBorder)
