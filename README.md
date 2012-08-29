@@ -51,6 +51,8 @@ If you plan to just use the mixins, just use table-base
 * `+page-header` - add the page header style to an element
 * `+page-header-h1` - page header style for h1 elements
 * `+dl-horizontal` - add to a definition list for horizontal layout 
+* `+lead` - add lead styles to an element
+* `+unstyled-list` - take out styles for a given list(margin and list-style). Dunno why this is in typography though
 
 ##Grid - PARTIALLY IMPLEMENTED
 
