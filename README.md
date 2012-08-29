@@ -74,6 +74,7 @@ If you plan to just use the mixins, just use table-base
 Basically uses the same classes and styles as Twitter Bootstrap. Code are usually inserted into `pre` and `code` tags anyway,
 so no need to turn them into a mixin. One mixin exists though:
 
+* `+prettyprint` - add some bottom margin to make code more readable
 * `+pre-scrollable` - make a code/pre scrollable (for long snippets)
 
 WIP: TO BE IMPLEMENTED
