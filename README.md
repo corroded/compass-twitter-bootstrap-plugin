@@ -50,16 +50,16 @@ Here are the available mixins(only the ones with "FULLY IMPLEMENTED" are availab
 * `+page-header-h1` - page header style for h1 elements
 * `+dl-horizontal` - add to a definition list for horizontal layout 
 
-##Grid - FULLY IMPLEMENTED
+##Grid - PARTIALLY IMPLEMENTED
 
-### Fixed-width
+### Fixed-width - FULLY IMPLEMENTED
 
 * `+row` - make your element a grid column container using this mixin
 * `+span(n)` - add n grid columns to your element
 * `+offset(n)` - add n empty grid columns to your grid
 * `+container` - add to an element to turn it into a containing element for your grid(based on $gridColumns)
 
-### Fluid
+### Fluid - HAS BUGS
 * `+fluid-row` - make your element a fluid grid column container using this mixin
 * `+fluid-span(n)` - add n grid columns to your element
 * `+fluid-offset(n)` - add n empty grid columns to your grid
