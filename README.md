@@ -69,6 +69,8 @@ If you plan to just use the mixins, just use table-base
 * `+fluid-offset(n)` - add n empty grid columns to your grid
 * `+container-fluid` - add to an element to turn it into a containing element for your fluid grid(based on $gridColumns)
 
+### Form Inputs - NOT YET IMPLEMENTED
+
 ## Code - FULLY IMPLEMENTED
 
 Basically uses the same classes and styles as Twitter Bootstrap. Code are usually inserted into `pre` and `code` tags anyway,
